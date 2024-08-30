@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="libre-baskerville-bold">Librarian</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2 class="libre-baskerville-bold">Rich Dad Poor Dad</h2>
+            <h5 class="libre-baskerville-regular">Robert T. Kiyosaki</h5>
+            <p class="libre-baskerville-regular">Rich Dad Poor Dad" by Robert Kiyosaki is a personal finance book that contrasts the financial philosophies of Kiyosaki’s two father figures—his biological father (Poor Dad) and the father of his best friend (Rich Dad). The book emphasizes the importance of financial education, investing, and entrepreneurial thinking to achieve financial independence and wealth.</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2 class="libre-baskerville-bold">Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book title" id="book-title-input">
+            <input type="text" placeholder="Book author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button type="button" id="add-book">Add</button>
+            <button type="button" id="cancel-popup">X</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

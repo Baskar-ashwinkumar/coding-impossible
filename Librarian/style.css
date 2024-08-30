@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    background-image: url(books.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #F8F4E1;
+}
+
+.navbar {
+    background-color: #F8F4E1;
+    padding: 15px;
+}
+
+.container {
+    padding: 10px;
+}
+
+
+.book-container {
+    padding: 15px;
+    width: 30%;
+    background-color: #F8F4E1;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.book-container h2,
+.book-container h5,
+.book-container p {
+    margin: 5px 0;
+}
+
+.book-container h5 {
+    color: #74512D;
+}
+
+.book-container button {
+    background-color: #af8f6fa1;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+.add-button {
+    background-color: #F8F4E1;
+    border-radius: 100%;
+    padding: 20px 30px;
+    font-size: 40px;
+    border-color: #543310;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.popup-overlay {
+    background-color: #543310;
+    opacity: 0.3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.popup-box {
+    background-color: #F8F4E1;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    top: 20%;
+    left: 30%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+
+.popup-box input,
+.popup-box textarea {
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid #543310 2px;
+}
+
+.popup-box textarea {
+    border: solid #543310 2px;
+}
+
+.popup-box input::placeholder,
+.popup-box textarea::placeholder {
+    color: #543310;
+    opacity: 0.6;
+}
+
+.popup-box input:focus,
+.popup-box textarea:focus {
+    outline: none;
+}
+
+#add-book {
+    background-color: #af8f6fa1;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+}
+
+#cancel-popup {
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
